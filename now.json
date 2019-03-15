@@ -3,6 +3,8 @@
   "name": "static",
   "builds": [
     { "src": "index.html", "use": "@now/html-minifier" },
-    { "src": "./static/styles.css", "use": "@now/html-minifier" }
+    { "src": "./static/styles.css", "use": "@now/html-minifier" },
+    { "src": "static/*.png", "use": "@now/static" },
+    { "src": "static/*.jpg", "use": "@now/static" }
   ]
 }

@@ -1,25 +1,22 @@
 .right {
   float: right;
-
   background-image: url("community.jpg");
 }
 
 .left {
   float: left;
-
   background-image: url("leatherwork.jpg");
 }
 
-.right:hover,
+.right:hover {
+  opacity: 1;
+  background-size: 110% 110%;
+  transition: background-size 1s linear;
+}
 .left:hover {
   opacity: 1;
-  transition: opacity 1s ease;
-
-  transform: translateY(-1%);
-  transition: transform 1s ease;
-  height: 102%;
-
-  z-index: 0;
+  background-size: 110% 110%;
+  transition: background-size 1s linear;
 }
 
 .panel {
@@ -30,11 +27,15 @@
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 
   background-color: black;
 
   z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 html {
@@ -49,12 +50,23 @@ body {
   padding: 0px;
 }
 
+a {
+  background: rgba(0, 0, 0, 0.7);
+  font-style: oblique;
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 2em;
+  border: solid 5px white;
+  border-radius: 5px;
+  padding: 8px;
+}
+
 .button:hover {
-  transform: translateY(-1%);
-  transition: transform 1s ease;
 }
 
 .button {
-  transform: translateY(-1%);
-  transition: transform 1s ease;
+}
+
+body .panel {
 }

@@ -62,11 +62,10 @@ a {
   padding: 8px;
 }
 
-.button:hover {
-}
-
-.button {
-}
-
-body .panel {
+@media screen and (max-width: 600px) {
+  .panel {
+    height: 50%;
+    width: 100%;
+    opacity: 1;
+  }
 }
